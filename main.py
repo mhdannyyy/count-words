@@ -3,5 +3,9 @@
 #Student ID: 2024275948
 
 sentence = input("Enter a sentence: ")
-words = sentence.split()
-print("Number of words:", len(words))
+
+if sentence.strip() == "":
+    print("No sentence was entered.")
+else:
+    words = sentence.split()
+    print("Number of words:", len(words))
